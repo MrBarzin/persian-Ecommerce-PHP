@@ -1,0 +1,359 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('../fonts/Vazir.eot') format('eot');
+    src: url('../fonts/Vazir.ttf') format('ttf');
+    src: url('../fonts/Vazir.woff') format('woff');
+    src: url('../fonts/Vazir.woff2') format('woff2');
+
+}
+
+
+body {
+    
+    font-family: vazir;
+    direction: rtl;
+   
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a {
+    color: #000000;
+}
+
+.border {
+    border: 1px solid #000000;
+}
+
+.text-danger {
+    color:rgb(212, 16, 16) ;
+    border-radius:5px ;
+    text-align: center;
+    color: #ff0000;
+}
+
+.text-green {
+    color:  rgb(31, 214, 31);
+    border-radius:5px ;
+    text-align: center;
+    color: #1bda25;
+ 
+
+}
+
+.text-orange {
+    color:rgb(243, 196, 12);
+}
+
+.text-white {
+    color:#000000;
+}
+
+.text-center {
+    text-align: center;
+    margin-left: 100px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.btn {
+    outline: none;
+    border: 1px solid;
+    cursor: pointer;
+    transition: all .3s;
+    font-family: vazir;
+
+    
+}
+
+.btn-danger {
+    background-color: rgb(212, 16, 16);
+    color: #ffffff;
+}
+
+.btn-danger:hover {
+    background-color:#ffffff;
+    color:rgb(212, 16, 16);
+}
+
+.btn-green {
+    background-color:rgb(5, 112, 126);
+    color: #ffffff;
+
+}
+
+.btn-green:hover {
+    background-color: #ffffff;
+    color: rgb(10, 124, 109);
+    
+}
+
+.btn-orange {
+    background-color:rgb(243, 196, 12);
+    color: #ffffff;
+}
+
+.btn-orange:hover {
+    background-color:#ffffff;
+    color: rgb(51, 170, 101);
+}
+
+.btn-lg {
+    padding: 10px 25px;
+    border-radius: 7px;
+    font-size: 23px;
+    
+}
+
+
+.btn-md {
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+header {
+    background-color: #4b96a8;
+    padding: 10px;
+    color:#f3f3f3;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+}
+
+header a {
+    display: inline-block;
+}
+
+header .logout {
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #000000;
+}
+
+header .show-web{
+    cursor: pointer;
+    padding: 5px 10px;
+    color: #000000;
+    border-radius: 10px;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    min-height: 90vh;
+}
+
+aside {
+    width: 20%;
+    background-color:  #4b96a8;
+    color: white;
+}
+
+aside nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+aside nav ul li a {
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    transition: all .3s;
+}
+
+
+aside nav ul li a:hover {
+    background-color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight:bold;
+    color: #f3f3f3;
+}
+
+aside nav ul li .submenu {
+    display: none;
+    transition: all .5s;
+    margin: 0 20px;
+    text-align: right;
+    animation: toggleSubmenu .5s;
+}
+
+aside nav ul li .submenu.active {
+    display: block;
+}
+
+@keyframes toggleSubmenu {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.main {
+    width: 80%;
+    margin: 20px;
+}
+
+.table tr:nth-child(even){background-color: #dcdcdc;}
+.table {
+   width: 80%;
+   border-collapse: collapse;
+   margin: 20px auto 50px auto;
+   direction:rtl;
+}
+
+.table thead {
+    background-color: #2d687a;
+    
+}
+.table td,th{
+    border-bottom: 1px solid #273c46;
+}
+
+.table caption {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.table tr {
+    border: 1px solid #273c46;
+    transition: all .3s;
+    text-align: center;
+    color:#000;
+    font-size:18px;
+}
+ 
+.table td {
+    padding: 10px;
+}
+
+.table img {
+    object-fit: contain;
+}
+
+.table tr:hover {
+    background-color: #ccdbd8;
+}
+
+
+.form {
+    margin-top: 50px;
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.form-group {
+    width: 60%;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.form-group label {
+    width: 20%;
+}
+
+.form-group input ,.form-group textarea{
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    transition: all .3s;
+}
+
+.form-group input[type=submit],
+.form-group input[type=button] {
+    border-color: unset;
+    padding: 5px 20px;
+}
+
+.form-group select {
+    width: 80%;
+    padding: 7px 10px;
+    border: 1px solid #000000;
+    transition: all .3s;
+}
+
+.form-group select:focus {
+    border-color: rgb(0, 0, 0);
+    outline: none;
+    box-shadow: 1px 3px 10px 2px rgb(0, 0, 0);
+
+}
+
+.form-group input:focus ,.form-group textarea:focus {
+    border-color:rgb(0, 0, 0);
+    box-shadow: 1px 3px 10px 2px rgb(0, 0, 0);
+    outline: none;
+}
+
+.form-group input::placeholder , .form-group textarea::placeholder{
+    font-size: 14px;
+    font-family: vazir;
+}
+
+.form-group .input-radio {
+    display: flex;
+    gap: 25px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.form-group .input-radio input[type=radio]:focus {
+    box-shadow: unset;
+}
+
+.form-group .input-checkbox {
+    display: flex;
+    gap: 30px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.form-group .input-checkbox input[type=checkbox]:focus {
+    box-shadow: unset;
+}
+
